@@ -9,12 +9,17 @@ const HeroSection = () => {
       id="hero"
       className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden"
     >
-      {/* Animated background gradients */}
-      <div className="absolute inset-0 -z-10 opacity-30 dark:opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-terralex-purple/30 rounded-full filter blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-terralex-teal/20 rounded-full filter blur-3xl animate-pulse-slow"></div>
+      {/* Animated background gradients - enhanced visibility */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-terralex-purple/10 to-terralex-teal/5"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-terralex-purple/20 rounded-full filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-terralex-teal/15 rounded-full filter blur-3xl animate-pulse-slow"></div>
         <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-terralex-purple/20 rounded-full filter blur-3xl animate-float"></div>
         <div className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-terralex-teal/10 rounded-full filter blur-3xl animate-float"></div>
+        
+        {/* Additional gradient elements */}
+        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-terralex-purple/5 rounded-full filter blur-3xl transform translate-x-1/4 -translate-y-1/4"></div>
+        <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-terralex-teal/5 rounded-full filter blur-3xl transform -translate-x-1/4 translate-y-1/4"></div>
       </div>
       
       {/* Animated background lines */}
@@ -24,6 +29,18 @@ const HeroSection = () => {
         <div className="absolute top-1/3 left-0 w-1/4 h-px bg-terralex-teal/30"></div>
         <div className="absolute bottom-1/4 left-0 w-1/3 h-px bg-terralex-purple/30"></div>
         <div className="absolute top-2/3 right-0 w-1/4 h-px bg-terralex-teal/30"></div>
+      </div>
+
+      {/* Decorative shapes and images */}
+      <div className="absolute inset-0 -z-5 overflow-hidden">
+        <div className="absolute top-20 right-10 w-32 h-32 border border-terralex-purple/20 rounded-full"></div>
+        <div className="absolute bottom-32 left-16 w-24 h-24 border border-terralex-teal/20 rounded-full"></div>
+        <div className="absolute top-40 left-10 w-3 h-3 bg-terralex-purple/40 rounded-full"></div>
+        <div className="absolute bottom-40 right-20 w-5 h-5 bg-terralex-teal/40 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-terralex-purple/30 rounded-full"></div>
+        
+        {/* Abstract grid pattern */}
+        <div className="absolute inset-0 grid-background opacity-20"></div>
       </div>
 
       <div className="terralex-container">
