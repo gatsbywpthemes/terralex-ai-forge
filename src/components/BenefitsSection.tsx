@@ -64,7 +64,7 @@ const BenefitsSection = () => {
               Why Choose <span className="text-gradient">AI Automation</span>
             </h2>
             <p className="text-foreground/70 mb-8 text-lg">
-              AI automation delivers transformative benefits for SMBs, positioning your 
+              AI automation delivers transformative benefits, positioning your 
               business for sustainable growth and success in today's competitive landscape.
             </p>
             
@@ -100,7 +100,7 @@ const BenefitsSection = () => {
                   <div>
                     <h3 className="text-2xl font-monument mb-3">AI Transformation</h3>
                     <p className="text-foreground/70">
-                      We've helped 250+ SMBs achieve an average of 85% increase in operational 
+                      We've helped 250+ companies achieve an average of 85% increase in operational 
                       efficiency through our custom AI automation solutions.
                     </p>
                   </div>
