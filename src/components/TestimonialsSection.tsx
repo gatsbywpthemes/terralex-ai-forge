@@ -57,14 +57,30 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding">
+    <section id="testimonials" className="section-padding section-bg relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="bg-gradient-blob w-[60rem] h-[60rem] -top-1/2 left-1/2 -translate-x-1/2 bg-terralex-purple/5 animate-pulse-slow"></div>
+        <div className="bg-gradient-blob w-[50rem] h-[50rem] bottom-0 -right-1/4 bg-terralex-teal/5 animate-float"></div>
+        
+        {/* Animated lines */}
+        <div className="animated-line w-full h-px top-1/4 animate-shimmer"></div>
+        <div className="animated-line w-1/2 h-px bottom-1/3 right-0 animate-shimmer delay-700"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-40 left-20 w-20 h-20 border border-terralex-purple/10 rounded-full animate-rotate-slow"></div>
+        <div className="absolute bottom-60 right-40 w-32 h-32 border border-terralex-teal/10 rounded-full animate-rotate-slow"></div>
+        <div className="absolute top-1/3 right-1/4 w-5 h-5 bg-terralex-purple/10 rounded-full animate-pulse-slow"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-terralex-teal/10 rounded-full animate-float"></div>
+      </div>
+
       <div className="terralex-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-monument mb-4">
             Success <span className="text-gradient">Stories</span>
           </h2>
           <p className="text-foreground/70">
-            Hear from SMBs that have transformed their operations with our AI automation solutions.
+            Hear from companies that have transformed their operations with our AI automation solutions.
           </p>
         </div>
 
@@ -126,7 +142,7 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-monument mb-4">Trusted by innovative SMBs</h3>
+          <h3 className="text-2xl font-monument mb-4">Trusted by innovative companies</h3>
           <div className="flex flex-wrap justify-center gap-8 mt-8">
             {["Retail", "Healthcare", "Manufacturing", "Logistics", "Finance", "Technology"].map(
               (industry) => (

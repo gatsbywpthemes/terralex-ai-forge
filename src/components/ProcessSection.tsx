@@ -30,7 +30,22 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="process" className="section-padding bg-foreground/5">
+    <section id="process" className="section-padding bg-foreground/5 section-bg relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="bg-gradient-blob w-[45rem] h-[45rem] bottom-0 -right-1/4 bg-terralex-purple/5 animate-pulse-slow"></div>
+        <div className="bg-gradient-blob w-[40rem] h-[40rem] -top-1/4 -left-1/4 bg-terralex-teal/5 animate-float"></div>
+        <div className="animated-line w-full top-20 animate-shimmer delay-1000"></div>
+        <div className="animated-line w-1/3 bottom-10 left-0 animate-shimmer"></div>
+        
+        {/* Animated circles */}
+        <div className="absolute top-40 right-10 w-4 h-4 bg-terralex-purple/20 rounded-full animate-pulse-slow"></div>
+        <div className="absolute bottom-20 left-1/4 w-6 h-6 bg-terralex-teal/10 rounded-full animate-float"></div>
+        
+        {/* Grid pattern */}
+        <div className="absolute inset-0 grid-background opacity-10"></div>
+      </div>
+      
       <div className="terralex-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-monument mb-4">

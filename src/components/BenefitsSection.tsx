@@ -56,7 +56,19 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="section-padding">
+    <section id="benefits" className="section-padding section-bg relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="bg-gradient-blob w-[50rem] h-[50rem] top-1/3 -right-1/4 bg-terralex-purple/5 animate-pulse-slow"></div>
+        <div className="bg-gradient-blob w-[40rem] h-[40rem] -top-20 -left-20 bg-terralex-teal/5 animate-float"></div>
+        <div className="animated-line w-1/3 top-1/3 left-0 animate-shimmer"></div>
+        <div className="animated-line w-1/2 bottom-1/4 right-0 animate-shimmer"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-1/4 w-6 h-6 border border-terralex-purple/20 rounded-full animate-pulse-slow"></div>
+        <div className="absolute bottom-40 right-1/3 w-8 h-8 border border-terralex-teal/20 rounded-full animate-float"></div>
+      </div>
+      
       <div className="terralex-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>

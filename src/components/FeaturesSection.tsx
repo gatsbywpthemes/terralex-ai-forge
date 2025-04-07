@@ -27,14 +27,25 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="section-padding bg-foreground/5">
+    <section id="features" className="section-padding bg-foreground/5 section-bg relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="bg-gradient-blob w-[40rem] h-[40rem] top-0 -right-20 bg-terralex-purple/5 animate-pulse-slow"></div>
+        <div className="bg-gradient-blob w-96 h-96 bottom-0 left-0 bg-terralex-teal/5 animate-float"></div>
+        <div className="animated-line w-full top-10 animate-shimmer"></div>
+        <div className="animated-line w-1/2 bottom-20 right-0 animate-shimmer"></div>
+      </div>
+      
+      {/* Grid pattern */}
+      <div className="absolute inset-0 grid-background opacity-20"></div>
+      
       <div className="terralex-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-monument mb-4">
             Intelligent <span className="text-gradient">Automation</span> Solutions
           </h2>
           <p className="text-foreground/70">
-            Our comprehensive suite of AI-powered tools designed specifically for SMBs
+            Our comprehensive suite of AI-powered tools designed specifically for companies
             looking to streamline operations and boost productivity.
           </p>
         </div>

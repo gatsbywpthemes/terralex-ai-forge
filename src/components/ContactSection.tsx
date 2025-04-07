@@ -44,7 +44,25 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding section-bg relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="bg-gradient-blob w-[60rem] h-[60rem] top-0 -right-1/3 bg-terralex-purple/5 animate-pulse-slow"></div>
+        <div className="bg-gradient-blob w-[50rem] h-[50rem] bottom-0 -left-1/3 bg-terralex-teal/5 animate-float"></div>
+        
+        {/* Animated lines */}
+        <div className="animated-line w-1/3 h-px top-20 left-0 animate-shimmer"></div>
+        <div className="animated-line w-1/2 h-px bottom-40 right-0 animate-shimmer delay-700"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-1/4 left-10 w-28 h-28 border border-terralex-purple/10 rounded-full animate-rotate-slow"></div>
+        <div className="absolute bottom-1/4 right-10 w-20 h-20 border border-terralex-teal/10 rounded-full animate-rotate-slow"></div>
+        
+        {/* Sparkles */}
+        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-terralex-purple/20 rounded-full sparkle"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-2 h-2 bg-terralex-teal/20 rounded-full sparkle"></div>
+      </div>
+
       <div className="terralex-container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -53,7 +71,7 @@ const ContactSection = () => {
             </h2>
             <p className="text-foreground/70 mb-8">
               Ready to revolutionize your business operations? Schedule a free consultation
-              with our AI experts and discover how Terralex can transform your SMB.
+              with our AI experts and discover how Terralex can transform your company.
             </p>
 
             <div className="space-y-6 mb-8">
