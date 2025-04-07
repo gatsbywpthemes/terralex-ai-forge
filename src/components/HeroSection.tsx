@@ -9,10 +9,12 @@ const HeroSection = () => {
       id="hero"
       className="min-h-screen flex items-center pt-20 section-padding relative overflow-hidden"
     >
-      {/* Background elements */}
+      {/* Animated background gradients */}
       <div className="absolute inset-0 -z-10 opacity-30 dark:opacity-20">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-terralex-purple/30 rounded-full filter blur-3xl animate-pulse-slow"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-terralex-teal/20 rounded-full filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-terralex-purple/20 rounded-full filter blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-80 h-80 bg-terralex-teal/10 rounded-full filter blur-3xl animate-float"></div>
       </div>
       
       {/* Animated background lines */}
@@ -28,12 +30,13 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1 space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-monument leading-tight tracking-tight">
-              <span className="text-gradient">AI-Powered</span> Automation For <TextAnimation />
+              <span className="text-gradient">AI-Powered</span> Automation<br />
+              For <TextAnimation />
             </h1>
             
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl">
               Terralex transforms your business operations with cutting-edge AI solutions. 
-              We automate marketing, operations, and logistics for companies ready to embrace the future.
+              We automate workflows and processes for companies ready to embrace the future.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
