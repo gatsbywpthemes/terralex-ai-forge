@@ -1,5 +1,5 @@
 
-import { TrendingUp, Clock, DollarSign, Scale, Target, LucideIcon } from "lucide-react";
+import { TrendingUp, Clock, DollarSign, Scale, Target, BrainCircuit, LucideIcon } from "lucide-react";
 
 interface BenefitProps {
   icon: React.ReactNode;
